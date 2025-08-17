@@ -1,0 +1,13 @@
+fastapi>=0.115.0  
+uvicorn>=0.34.0   
+pydantic==2.8.0
+pydantic-core==2.20.0  
+pyyaml==6.0.1
+sherpa-onnx==1.12.8
+websockets==14.1  
+ffmpeg-python==0.2.0
+numpy==1.26.2
+python-multipart==0.0.9  
+anyio>=4.5  
+setuptools>=65.0.0
+wheel>=0.40.0

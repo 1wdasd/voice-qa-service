@@ -1,0 +1,28 @@
+asr:
+  provider: "sherpa_onnx"
+  params:
+    tokens: "./models/sherpa-onnx/sherpa-onnx-streaming-zipformer-zh-14M-2023-02-23/tokens.txt"
+    encoder: "./models/sherpa-onnx/sherpa-onnx-streaming-zipformer-zh-14M-2023-02-23/encoder-epoch-99-avg-1.int8.onnx"
+    decoder: "./models/sherpa-onnx/sherpa-onnx-streaming-zipformer-zh-14M-2023-02-23/decoder-epoch-99-avg-1.int8.onnx"
+    joiner: "./models/sherpa-onnx/sherpa-onnx-streaming-zipformer-zh-14M-2023-02-23/joiner-epoch-99-avg-1.int8.onnx"
+    num_threads: 2
+
+tts:
+  provider: "fake"  # 可选: fake, minimax
+  params:
+    # 如果使用fake提供者
+    voice_type: "default"
+    # 如果使用minimax提供者
+    # api_key: "your_minimax_api_key"
+    # group_id: "your_group_id"
+    # voice_id: "female-qn-qingxin"
+
+llm:
+  provider: "glm"
+  params:
+    api_key: "your_glm_api_key"
+    model: "glm-4"
+
+audio:
+  sample_rate: 16000
+  channels: 1
